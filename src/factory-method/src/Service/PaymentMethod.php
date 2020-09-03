@@ -1,4 +1,4 @@
-<?php
+<?php 
 declare(strict_types=1);
 /**
  * @author Kacper Majczak
@@ -8,7 +8,6 @@ declare(strict_types=1);
 
 namespace DesignPatterns\FactoryMethod\Service;
 
-class CreditCardPayment implements PaymentMethod
+interface PaymentMethod
 {
-
 }

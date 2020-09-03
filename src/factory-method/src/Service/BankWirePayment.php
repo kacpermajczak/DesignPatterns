@@ -10,7 +10,7 @@ declare(strict_types=1);
 namespace DesignPatterns\FactoryMethod\Service;
 
 
-class BankWirePayment
+class BankWirePayment implements PaymentMethod
 {
 
 }
