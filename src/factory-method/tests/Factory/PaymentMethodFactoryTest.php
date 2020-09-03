@@ -7,6 +7,7 @@
 
 namespace DesignPatterns\FactoryMethod\Tests\Factory;
 
+use DesignPatterns\FactoryMethod\Factory\BankWirePaymentFactory;
 use DesignPatterns\FactoryMethod\Service\BankWirePayment;
 use DesignPatterns\FactoryMethod\Factory\CreditCardPaymentFactory;
 use DesignPatterns\FactoryMethod\Service\CreditCardPayment;
@@ -23,7 +24,7 @@ class PaymentMethodFactoryTest extends TestCase
 
     public function test_create_bank_wire_payment()
     {
-        $payment = new BankWirePayment();
+        $payment = (new BankWirePaymentFactory())->createPayment();
 
         $this->assertInstanceOf(BankWirePayment::class, $payment);
     }
