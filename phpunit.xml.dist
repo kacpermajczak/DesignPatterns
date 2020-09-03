@@ -16,8 +16,8 @@
     </php>
 
     <testsuites>
-        <testsuite name="Project Test Suite">
-            <directory>tests</directory>
+        <testsuite name="Factory Method Tests">
+            <directory>src/factory-method/tests</directory>
         </testsuite>
     </testsuites>
 
