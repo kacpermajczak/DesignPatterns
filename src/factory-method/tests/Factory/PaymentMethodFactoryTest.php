@@ -7,7 +7,7 @@
 
 namespace DesignPatterns\FactoryMethod\Tests\Factory;
 
-use DesignPatterns\FactoryMethod\Factory\CreditCardPayment;
+use DesignPatterns\FactoryMethod\Service\CreditCardPayment;
 use PHPUnit\Framework\TestCase;
 
 class PaymentMethodFactoryTest extends TestCase

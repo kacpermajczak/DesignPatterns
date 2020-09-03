@@ -6,7 +6,7 @@ declare(strict_types=1);
  * @date 03/09/2020
  */
 
-namespace DesignPatterns\FactoryMethod\Factory;
+namespace DesignPatterns\FactoryMethod\Service;
 
 class CreditCardPayment
 {
