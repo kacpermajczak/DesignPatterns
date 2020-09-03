@@ -1,0 +1,20 @@
+<?php
+declare(strict_types=1);
+/**
+ * @author Kacper Majczak
+ * @site http://kacpermajczak.pl/
+ * @date 03/09/2020
+ */
+
+namespace DesignPatterns\FactoryMethod\Factory;
+
+use DesignPatterns\FactoryMethod\Service\CreditCardPayment;
+use DesignPatterns\FactoryMethod\Service\PaymentMethod;
+
+class CreditCardPaymentFactory implements PaymentMethodFactory
+{
+    public function createPayment(): PaymentMethod
+    {
+        return new CreditCardPayment();
+    }
+}
