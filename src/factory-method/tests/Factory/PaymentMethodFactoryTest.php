@@ -14,7 +14,7 @@ class PaymentMethodFactoryTest extends TestCase
 {
     public function test_create_credit_card_payment()
     {
-        $payment = new CreditCardPayment();
+        $payment = (new CreditCardPaymentFactory())->createPayment();
 
         $this->assertInstanceOf(CreditCardPayment::class, $payment);
     }
