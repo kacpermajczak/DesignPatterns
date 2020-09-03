@@ -25,12 +25,14 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "App\\": "src/",
+            "DesignPatterns\\FactoryMethod\\": "src/factory-method/src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "App\\Tests\\": "tests/"
+            "App\\Tests\\": "tests/",
+            "DesignPatterns\\Tests\\FactoryMethod\\": "src/factory-method/src/"
         }
     },
     "replace": {
