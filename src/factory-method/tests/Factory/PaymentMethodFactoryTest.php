@@ -7,6 +7,7 @@
 
 namespace DesignPatterns\FactoryMethod\Tests\Factory;
 
+use DesignPatterns\FactoryMethod\Service\BankWirePayment;
 use DesignPatterns\FactoryMethod\Factory\CreditCardPaymentFactory;
 use DesignPatterns\FactoryMethod\Service\CreditCardPayment;
 use PHPUnit\Framework\TestCase;
