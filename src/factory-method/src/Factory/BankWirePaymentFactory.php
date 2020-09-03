@@ -10,7 +10,7 @@ namespace DesignPatterns\FactoryMethod\Factory;
 
 use DesignPatterns\FactoryMethod\Service\BankWirePayment;
 
-class BankWirePaymentFactory
+class BankWirePaymentFactory implements PaymentMethodFactory
 {
     public function createPayment(): BankWirePayment
     {

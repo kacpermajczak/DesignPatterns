@@ -12,7 +12,7 @@ namespace DesignPatterns\FactoryMethod\Factory;
 
 use DesignPatterns\FactoryMethod\Service\CreditCardPayment;
 
-class CreditCardPaymentFactory
+class CreditCardPaymentFactory implements PaymentMethodFactory
 {
     public function createPayment(): CreditCardPayment
     {
