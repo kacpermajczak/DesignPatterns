@@ -19,4 +19,11 @@ class PaymentMethodFactoryTest extends TestCase
 
         $this->assertInstanceOf(CreditCardPayment::class, $payment);
     }
+
+    public function test_create_bank_wire_payment()
+    {
+        $payment = new BankWirePayment();
+
+        $this->assertInstanceOf(BankWirePayment::class, $payment);
+    }
 }
