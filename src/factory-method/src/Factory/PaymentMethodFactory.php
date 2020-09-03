@@ -8,7 +8,9 @@ declare(strict_types=1);
 
 namespace DesignPatterns\FactoryMethod\Factory;
 
+use DesignPatterns\FactoryMethod\Service\PaymentMethod;
+
 interface PaymentMethodFactory
 {
-    public function createPayment();
+    public function createPayment(): PaymentMethod;
 }

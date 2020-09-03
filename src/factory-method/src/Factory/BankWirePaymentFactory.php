@@ -9,10 +9,11 @@ declare(strict_types=1);
 namespace DesignPatterns\FactoryMethod\Factory;
 
 use DesignPatterns\FactoryMethod\Service\BankWirePayment;
+use DesignPatterns\FactoryMethod\Service\PaymentMethod;
 
 class BankWirePaymentFactory implements PaymentMethodFactory
 {
-    public function createPayment(): BankWirePayment
+    public function createPayment(): PaymentMethod
     {
         return new BankWirePayment();
     }
